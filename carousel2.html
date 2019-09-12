@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Adinay</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+        <img id="1" src="Samye_vysokie_zdanija_Moskvy_10.jpg">
+        <button onclick="click1()">past</button>
+        <button onclick="click2()">next</button>
+    <script>
+        count=1
+        function click1() {
+            count--
+            if (count == 0) {
+                count = 5
+            }
+
+            if (count==1)
+                document.getElementById("1").src="Samye_vysokie_zdanija_Moskvy_10.jpg"
+            else if (count==2)
+                document.getElementById("1").src="81628794b464f05ab47165868d0e8b60.jpg"
+            else if (count==3)
+                document.getElementById("1").src="1539.jpg"
+            else if ("count==4")
+                document.getElementById("1").src="Без названия (4).jpg"
+            else if ("count==5")
+                 document.getElementById("1").src="images (4).jpg"
+        }
+
+
+        function click2() {
+             count++
+             if (count==6){
+                 count=1
+             }
+
+            if (count==1)
+                document.getElementById("1").src="Samye_vysokie_zdanija_Moskvy_10.jpg"
+            else if (count==2)
+                document.getElementById("1").src="81628794b464f05ab47165868d0e8b60.jpg"
+            else if (count==3)
+                document.getElementById("1").src="1539.jpg"
+            else  if(count==4)
+                document.getElementById("1").src="Без названия (4).jpg"
+            else  if ("count==5")
+                document.getElementById("1").src="images (4).jpg"
+        }
+
+
+
+
+    </script>
+</body>
+</html>
